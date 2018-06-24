@@ -12,7 +12,8 @@
     "test": "yarn build && mocha dist/*_test.js",
     "build": "tsc",
     "lint": "tslint -p . -t verbose",
-    "doc": "typedoc --out ./doc lib/model.ts lib/td.ts"
+    "doc": "typedoc --out ./doc lib/model.ts lib/td.ts",
+    "prepublishOnly": "yarn build"
   },
   "author": "Kai Sasaki",
   "license": "Apache-2.0",
