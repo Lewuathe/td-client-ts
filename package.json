@@ -4,6 +4,10 @@
   "description": "TypeScript client for Treasure Data",
   "main": "dist/ts.js",
   "types": "dist/ts.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lewuathe/td-client-ts.git"
+  },
   "scripts": {
     "test": "yarn build && mocha dist/*_test.js",
     "build": "tsc",
