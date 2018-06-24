@@ -2,8 +2,7 @@
   "name": "td-client-ts",
   "version": "0.0.1",
   "description": "TypeScript client for Treasure Data",
-  "main": "dist/ts.js",
-  "types": "dist/ts.d.ts",
+  "main": "./dist/td.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Lewuathe/td-client-ts.git"
