@@ -10,7 +10,7 @@
     "doc": "typedoc --out ./doc lib/model.ts lib/td.ts"
   },
   "author": "Kai Sasaki",
-  "license": "MIT",
+  "license": "Apache V2",
   "dependencies": {
     "@types/request-promise-native": "^1.0.15",
     "mocha": "^5.2.0",
