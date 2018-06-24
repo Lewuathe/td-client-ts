@@ -2,7 +2,8 @@
   "name": "td-client-ts",
   "version": "0.0.1",
   "description": "TypeScript client for Treasure Data",
-  "main": "index.js",
+  "main": "dist/ts.js",
+  "types": "dist/ts.d.ts",
   "scripts": {
     "test": "yarn build && mocha dist/*_test.js",
     "build": "tsc",
@@ -10,7 +11,7 @@
     "doc": "typedoc --out ./doc lib/model.ts lib/td.ts"
   },
   "author": "Kai Sasaki",
-  "license": "Apache V2",
+  "license": "Apache-2.0",
   "dependencies": {
     "@types/request-promise-native": "^1.0.15",
     "mocha": "^5.2.0",
