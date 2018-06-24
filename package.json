@@ -1,0 +1,33 @@
+{
+  "name": "td-client-ts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn build && mocha dist/*_test.js",
+    "build": "tsc",
+    "lint": "tslint -p . -t verbose",
+    "doc": "typedoc --out ./doc lib/model.ts lib/td.ts"
+  },
+  "author": "Kai Sasaki",
+  "license": "MIT",
+  "dependencies": {
+    "@types/request-promise-native": "^1.0.15",
+    "mocha": "^5.2.0",
+    "querystring": "^0.2.0",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5",
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.3",
+    "@types/nock": "^9.1.3",
+    "@types/request": "^2.47.1",
+    "chai": "^4.1.2",
+    "nock": "^9.3.3",
+    "tslint": "^5.10.0",
+    "tslint-no-circular-imports": "^0.5.0",
+    "typedoc": "^0.11.1"
+  }
+}
