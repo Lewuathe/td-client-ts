@@ -1,5 +1,7 @@
-TypeScript Client for Treasure Data
+TypeScript Client for Treasure Data [![npm](https://img.shields.io/npm/v/td-client-ts.svg)]() [![CircleCI](https://circleci.com/gh/Lewuathe/td-client-ts.svg?style=svg)](https://circleci.com/gh/Lewuathe/td-client-ts)
 =====
+
+[![NPM](https://nodei.co/npm/td-client-ts.png)](https://nodei.co/npm/td-client-ts/)
 
 # Overview
 
