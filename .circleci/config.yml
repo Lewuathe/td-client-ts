@@ -1,0 +1,39 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/td-client-ts
+    docker:
+      - image: circleci/node:8.2.1
+    steps:
+      - checkout
+      - restore_cache:
+          key: td-client-ts-{{ checksum "package.json" }}
+
+      - run:
+          name: Compile
+          command: |
+            yarn build
+
+      - run:
+          name: Lint
+          command: |
+            yarn lint
+
+      - run:
+          name: Test
+          command: |
+            yarn test
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: td-client-ts-{{ checksum "package.json" }}
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build:
+          filters:
+            tags:
+              only: /.*/
