@@ -52,15 +52,18 @@ export class TD {
       });
   }
 
-  async createTable(db: string, table: string, type: string): Promise<CreateTableResponse> {
-    return this.postRequest(`/v3/table/create/${qs.escape(db)}/${qs.escape(table)}/${qs.escape(type)}`)
+  async createTable(db: string, table: string,
+                    type: string): Promise<CreateTableResponse> {
+    return this.postRequest(`/v3/table/create/`
+      + `${qs.escape(db)}/${qs.escape(table)}/${qs.escape(type)}`)
       .then(value => {
         return CreateTableResponse.fromJson(value);
       });
   }
 
   async deleteTable(db: string, table: string): Promise<DeleteTableResponse> {
-    return this.postRequest(`/v3/table/delete/${qs.escape(db)}/${qs.escape(table)}`)
+    return this.postRequest(`/v3/table/delete/`
+      + `${qs.escape(db)}/${qs.escape(table)}`)
       .then(value => {
         return DeleteTableResponse.fromJson(value);
       });
