@@ -15,4 +15,6 @@ Treasure Data Cloud solves the problem by having: easy installation, small footp
 td-client-ts is a TypeScript client which can be integrated to your node project or Browser project.
 
 
+# Usage
 
+API documentation is [here](https://www.lewuathe.com/td-client-ts/index.html).
