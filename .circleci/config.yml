@@ -10,6 +10,11 @@ jobs:
           key: td-client-ts-{{ checksum "package.json" }}
 
       - run:
+          name: Resolve dependencies
+          command: |
+            yarn
+
+      - run:
           name: Compile
           command: |
             yarn build
