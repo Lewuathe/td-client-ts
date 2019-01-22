@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/td-client-ts
     docker:
-      - image: circleci/node:8.2.1
+      - image: circleci/node:8.15
     steps:
       - checkout
       - restore_cache:
