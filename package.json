@@ -1,6 +1,6 @@
 {
   "name": "td-client-ts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "TypeScript client for Treasure Data",
   "main": "./dist/td.js",
   "repository": {
